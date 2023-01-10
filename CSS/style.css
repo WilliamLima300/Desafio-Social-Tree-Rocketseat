@@ -1,0 +1,107 @@
+/* Importar fonte Poppins do Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+/* definir variaveis para cor e fonte*/
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+    --white:#FFF;
+    --poppins:'Poppins', sans-serif;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    background-color: var(--body-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+/* definir propiedades da div principal */
+
+.main{
+    width: 30%;
+    max-width: 350px;
+    margin:0 auto;
+    background-color: var(--body-bg-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+/* definir propiedades da div com a imagem */
+
+.main .image img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--purple);
+    padding: 5px;
+
+}
+
+.main .image {
+    font-family: var(--poppins);
+    color:var(--purple);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin:10px 0 ;
+
+}
+
+.main .image span{
+    margin:20px 5px 0;
+}
+
+/* definir propiedades da div com os links */
+
+.main .links{
+    max-width: 310px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 15px 0;
+}
+
+
+.main .links a{
+    width:300px;
+    font-family: var(--poppins);
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid var(--purple);
+    margin:5px 0;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.main .links a:hover{
+    border: 2px solid var(--white);
+    background-color: var(--purple);
+    color:var(--white);
+    transition: ease-in-out 0.4s;
+}
+
+
+/* definir propiedades da div com os icons */
+
+.main .icons{
+    display: flex;
+    margin :10px 5px;
+}
+
+.main .icons a{
+    display: flex;
+    margin :10px 20px;
+}
